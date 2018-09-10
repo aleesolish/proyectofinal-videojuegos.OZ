@@ -95,7 +95,24 @@ public class Player_Moving : MonoBehaviour
 
         transform.localScale = theScale;
     }
+    /*
+    private void OnCollisionEnter2D(Collision2D obj)
+    {
 
 
+        if (obj.transform.tag == "rubie")
+        {
+            Destroy(obj.transform.gameObject);
+        }
 
+    }*/
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+        if (other.gameObject.tag == "pickup") {
+            Destroy(other.gameObject);
+            Debug.Log("Rubie picked");
+        }
+
+	}
 }
