@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Player_Moving : MonoBehaviour
@@ -20,6 +21,10 @@ public class Player_Moving : MonoBehaviour
 
     public LayerMask whatIsGround;
 
+    public Text countText;
+    private int count;
+    public Text winText;
+
 
 
 
@@ -34,6 +39,10 @@ public class Player_Moving : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        winText.text = "";
+        count = 0;
+        SetCounter();
+
     }
 
 
@@ -95,24 +104,24 @@ public class Player_Moving : MonoBehaviour
 
         transform.localScale = theScale;
     }
-    /*
-    private void OnCollisionEnter2D(Collision2D obj)
-    {
-
-
-        if (obj.transform.tag == "rubie")
-        {
-            Destroy(obj.transform.gameObject);
-        }
-
-    }*/
+  
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
         if (other.gameObject.tag == "pickup") {
             Destroy(other.gameObject);
-            Debug.Log("Rubie picked");
+            count = count + 1;
+            SetCounter();
         }
 
 	}
+
+    void SetCounter(){
+        countText.text = "Gemas:" + count.ToString() + "/10";
+        if (count >= 10 ){
+            winText.text = "Obtuviste todas las gemas!";
+        }
+        
+
+    }
 }
