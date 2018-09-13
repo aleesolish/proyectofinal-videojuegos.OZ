@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class Bullet : MonoBehaviour
+{
 
 
     public float bulletSpeed;
-
+    public float HitRange;
     public Player_Moving player1;
+    public Transform BulletHit;
+    public LayerMask whatIsEnemies;
+
 
     private void Start()
     {
@@ -20,10 +24,18 @@ public class Bullet : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
-            
-    private void Update()
+
+
+
+    void OnTriggerEnter2D(Collider2D other)
     {
+       
         GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(BulletHit.position, HitRange, whatIsEnemies);
         DestroyObject(gameObject, 3f);
+
+
     }
 }
+
+

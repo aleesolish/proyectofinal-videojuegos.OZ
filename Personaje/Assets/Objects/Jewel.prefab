@@ -21,10 +21,9 @@ GameObject:
   - component: {fileID: 4637141009240984}
   - component: {fileID: 212282384859109400}
   - component: {fileID: 95260990911817372}
-  - component: {fileID: 70970775903349922}
   m_Layer: 0
   m_Name: Jewel
-  m_TagString: pickup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,27 +35,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1323163494246850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90.8, y: 16, z: 0}
+  m_LocalPosition: {x: -860.93, y: -614.25995, z: 8.93}
   m_LocalScale: {x: 1.4062887, y: 1.4062887, z: 1.4062887}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70970775903349922
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1323163494246850}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.1000001, y: 1.7000003}
-  m_Direction: 0
 --- !u!95 &95260990911817372
 Animator:
   serializedVersion: 3
@@ -107,9 +91,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1466449917
-  m_SortingLayer: 2
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 91be5d6fa22bb43099e1428989218530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

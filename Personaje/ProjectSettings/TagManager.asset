@@ -5,8 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spikes
-  - 'rubie '
-  - pickup
+  - Gem
+  - GameMaster
+  - Enemy
+  - PickUp
+  - FallDetector
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -17,10 +21,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
+  - Obstacle
   - 
   - 
   - 
