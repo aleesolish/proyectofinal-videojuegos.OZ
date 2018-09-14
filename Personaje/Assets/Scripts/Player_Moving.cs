@@ -14,6 +14,12 @@ public class Player_Moving : MonoBehaviour
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
     public Animator anim;
 
+    //PlayerHealth
+    [SerializeField]
+    Slider HealthSlider;
+    public static float maxHealth = 100;
+    public float currentHealth;
+    public bool Damage;
 
     // SALTO
     bool grounded = false;  // Referencia al animator
@@ -32,6 +38,8 @@ public class Player_Moving : MonoBehaviour
     public Transform muzzle;
     public GameObject bullet;
 
+
+    public GameObject frog;
 
 
     // ATAQUE
@@ -59,6 +67,11 @@ public class Player_Moving : MonoBehaviour
     {
         LevelManager = FindObjectOfType<GameMaster>();
         anim = GetComponent<Animator>();
+
+        //PlayerHealth
+        HealthSlider.value = maxHealth;
+        currentHealth = HealthSlider.value;
+        LevelManager = FindObjectOfType<GameMaster>();
 
         count = 0;
 
@@ -92,18 +105,14 @@ public class Player_Moving : MonoBehaviour
     }
 
 
-
-    private void HandleInput()
-    {
-
-    }
+   
 
 
 
     private void Update()
 
     {
-        HandleInput();
+     
 
         // ATAQUE
 
@@ -165,7 +174,7 @@ public class Player_Moving : MonoBehaviour
                 if (doubleJump && Input.GetKeyDown(KeyCode.Space))
                 {
 
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce/2));
                     doubleJump = false;
                 }
             }
@@ -231,6 +240,30 @@ public class Player_Moving : MonoBehaviour
 
             SetCounter();
         }
+        if (other.gameObject.tag == "Slow")
+        {
+            topSpeed = 7f;
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Enemy touched");
+            currentHealth -= 30;
+            Debug.Log(currentHealth);
+        }
+        if (other.gameObject.tag == "x")
+        {
+            Debug.LogWarning("Entra de lado");
+            float posX = other.gameObject.transform.parent.transform.localPosition.x + 10.0f;
+            float posY = other.gameObject.transform.parent.transform.localPosition.y;
+            float posZ = other.gameObject.transform.parent.transform.localPosition.z;
+            other.gameObject.transform.parent.transform.localPosition += new Vector3(posX, posY, posZ);
+            TakeDamage(30);
+        }
+        if (other.gameObject.tag == "y")
+        {
+            Destroy(other.gameObject.transform.parent.gameObject);
+            //frog = GameObject.FindWithTag("Enemy");
+        }
 
     }
     void SetCounter()
@@ -243,6 +276,35 @@ public class Player_Moving : MonoBehaviour
 
     public void EnemyJump(){
         grounded = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Slow")
+        {
+            topSpeed = 14f;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D col)
+    {
+
+        if (col.gameObject.tag == "Spikes")
+        {
+            HealthSlider.value -= 1.5f;
+            currentHealth = HealthSlider.value;
+            anim.SetTrigger("Damage"); // Activa el Trigger en el Animator
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero; //Resetea la velocidad del personaje para que no avance mientras ataca
+        }
+    }
+
+
+    void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+        Debug.Log(currentHealth);
+
+
     }
 
 }

@@ -8,6 +8,7 @@ public class Enemy_Controller : MonoBehaviour
     public float maxSpeed = 5f;
     public float speed = 8f;
     public float limitedSpeed = 1f;
+    public GameObject player;
 
 
     private Rigidbody2D rb2d;
@@ -47,15 +48,17 @@ public class Enemy_Controller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        /*
         if (col.gameObject.tag == "Player")
         {
+            
             if (transform.position.y < col.transform.position.y)
             {
-                col.SendMessage("EnemyJump");
+                col.SendMessage("EnemyJumps");
                 Destroy(gameObject);
 
             }
-        }
+        }*/
     }
 
 }

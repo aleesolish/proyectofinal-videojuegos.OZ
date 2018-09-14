@@ -11,6 +11,9 @@ TagManager:
   - PickUp
   - FallDetector
   - Checkpoint
+  - Slow
+  - y
+  - x
   layers:
   - Default
   - TransparentFX
