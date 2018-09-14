@@ -239,4 +239,10 @@ public class Player_Moving : MonoBehaviour
 
 
     }
+
+
+    public void EnemyJump(){
+        grounded = true;
+    }
+
 }
