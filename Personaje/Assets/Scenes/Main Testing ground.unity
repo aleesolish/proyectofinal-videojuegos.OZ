@@ -6381,7 +6381,7 @@ GameObject:
   m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6957,7 +6957,7 @@ MonoBehaviour:
   gamePlayer: {fileID: 439645167}
   HealthPlayer: {fileID: 439645166}
   resDelay: 3
-  PointText: {fileID: 0}
+  PointText: {fileID: 1877032425}
   respawnPoint: {x: 0, y: 0, z: 0}
   currentHealth: 0
 --- !u!4 &1243566443
@@ -12298,7 +12298,7 @@ MonoBehaviour:
   gamePlayer: {fileID: 0}
   HealthPlayer: {fileID: 0}
   resDelay: 0
-  PointText: {fileID: 0}
+  PointText: {fileID: 2142394798}
   respawnPoint: {x: 0, y: 0, z: 0}
   currentHealth: 0
 --- !u!222 &2142394800

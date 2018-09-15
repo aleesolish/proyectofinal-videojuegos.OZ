@@ -20,7 +20,7 @@ public class GameMaster : MonoBehaviour
     private void Start()
     {
         HealthPlayer = FindObjectOfType<PlayerHealth>();
-        PointText.text = "Gemas:";
+        //PointText.text = "Gemas:";
         respawnPoint = transform.position;
 
     }
@@ -28,10 +28,10 @@ public class GameMaster : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            anim.SetBool("IsDead", true);
+            //anim.SetBool("IsDead", true);
 
             {
-                respawnPoint = GetComponent<Collider2D>().transform.position;
+                //respawnPoint = GetComponent<Collider2D>().transform.position;
             }
 
         }
