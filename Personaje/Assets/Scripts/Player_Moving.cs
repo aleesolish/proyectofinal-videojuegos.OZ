@@ -10,7 +10,7 @@ public class Player_Moving : MonoBehaviour
     public GameMaster LevelManager;
 
     // MOVIMIENTO
-    public static float topSpeed = 14f; // Maxima velocidad del personaje
+    public static float topSpeed = 25f; // Maxima velocidad del personaje
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
     public Animator anim;
 
@@ -24,49 +24,35 @@ public class Player_Moving : MonoBehaviour
     // SALTO
     bool grounded = false;  // Referencia al animator
     public Transform groundCheck;   // transform a los pies del personaje para comprobar si toca el suelo
-    float groundRadius = 1f;   // diametro del circulo que detecta el suelo
-    public static float jumpForce = 2200f; // Fuerza del salto
+    float groundRadius = 2f;   // diametro del circulo que detecta el suelo
+    public static float jumpForce = 2500f; // Fuerza del salto
     public LayerMask whatIsGround; // Capas que detecta como suelo
 
     // DOBLE SALTO
-    public bool doubleJump = false;// variable del doble salto 
-
-
-
-    // DISPARO
-    bool isShooting = false;
-    public Transform muzzle;
-    public GameObject bullet;
-
+    public bool doubleJump = false;// variable del doble salto
 
     public GameObject frog;
 
 
-    // ATAQUE
-
-    float timeBTattack;
-    public float startTimeBTattack;
-    public Transform attackPos;
-    public float attackRange;
 
     public LayerMask whatIsEnemies;
     public int damage;
-
-    public Animator camAnim;
-
-
-   
-
-
-
+    public Vector3 respawnPoint;
     private int count;
     public Text PointText;
 
+
+
+    public Animator camAnim;
+
+   
 
     private void Start()
     {
         LevelManager = FindObjectOfType<GameMaster>();
         anim = GetComponent<Animator>();
+
+        respawnPoint = transform.position;
 
         //PlayerHealth
         HealthSlider.value = maxHealth;
@@ -105,49 +91,16 @@ public class Player_Moving : MonoBehaviour
     }
 
 
-   
+
 
 
 
     private void Update()
 
     {
-     
-
-        // ATAQUE
 
 
-
-        if (timeBTattack <= 0)
-
-        {
-            // Entonces se puede atacar
-            if (Input.GetKey(KeyCode.Z))
-            {
-                anim.SetTrigger("Attack"); // Activa el Trigger en el Animator
-                camAnim.SetTrigger("Shake");// Animacion Movimiento de camara al golpear
-
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-
-
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
-                    GetComponent<Rigidbody2D>().velocity = Vector2.zero; //Resetea la velocidad
-                }
-
-            }
-
-
-                timeBTattack = startTimeBTattack;
-            }
-            else
-            {
-                timeBTattack -= Time.deltaTime;
-            }
-      
-
+        // SALTAR
 
         // Verdadero o falso que el suelo se transformo. toco el grounRadius
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
@@ -156,7 +109,7 @@ public class Player_Moving : MonoBehaviour
 
         if (!this.anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //Condicion que interrumpe el movimienot si se ataca
         {
-            // SALTAR
+
             if (grounded)
             {
                 if (Input.GetKeyDown(KeyCode.Space))
@@ -174,40 +127,19 @@ public class Player_Moving : MonoBehaviour
                 if (doubleJump && Input.GetKeyDown(KeyCode.Space))
                 {
 
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce/2));
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce / 2));
                     doubleJump = false;
                 }
             }
 
 
-
-            // DISPARO
-
-            if (!this.anim.GetCurrentAnimatorStateInfo(0).IsTag("isShooting")) //Condicion que interrumpe el movimienot si se ataca
-            {
-                if (Input.GetMouseButtonDown(0))
-
-                {
-                    anim.SetTrigger("isShooting");
-                    GameObject mBullet = Instantiate(bullet, muzzle.position, muzzle.rotation);
-
-                    mBullet.transform.parent = GameObject.Find("GameManager").transform;
-                    mBullet.GetComponent<Renderer>().sortingLayerName = "Player1";
-
-
-                }
-
-            }
-            else
-            {
-                isShooting = false;
-            }
         }
-
-
-
-
     }
+
+
+
+
+
     // VOLTEAR AL PERSONAJE
     void Flip()
     {
@@ -222,17 +154,22 @@ public class Player_Moving : MonoBehaviour
     }
 
 
-    // Enemigo se vuelve rojo cuando lo golpeas
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPos.position, attackRange);
-
-    }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
+        if (other.tag == "FallDetector")
+        {
+            respawnPoint = GetComponent<Collider2D>().transform.position;
+            Respawn();
+        }
+        if (other.tag == "Checkpoint")
+        {
+            respawnPoint = other.transform.position;
+        }
+
+
+
         if (other.gameObject.tag == "PickUp")
         {
             Destroy(other.gameObject);
@@ -306,5 +243,15 @@ public class Player_Moving : MonoBehaviour
 
 
     }
+
+   
+
+    public void Respawn()
+    {
+       
+        respawnPoint = GetComponent<Collider2D>().transform.position;
+
+    }
+
 
 }

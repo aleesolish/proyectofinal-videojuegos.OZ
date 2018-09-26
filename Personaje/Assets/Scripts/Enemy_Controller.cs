@@ -48,17 +48,19 @@ public class Enemy_Controller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        /*
+
         if (col.gameObject.tag == "Player")
         {
-            
-            if (transform.position.y < col.transform.position.y)
+            float yOffset = 0.4f;
+
+            if (transform.position.y + yOffset < col.transform.position.y)
             {
-                col.SendMessage("EnemyJumps");
+                col.SendMessage("EnemyJump");
                 Destroy(gameObject);
 
             }
-        }*/
-    }
 
+        }
+
+    }
 }
