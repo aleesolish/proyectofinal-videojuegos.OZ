@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
        
         GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, GetComponent<Rigidbody2D>().velocity.y);
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(BulletHit.position, HitRange, whatIsEnemies);
-        DestroyObject(gameObject, 3f);
+            DestroyObject(gameObject, 3f);
 
 
     }

@@ -133,7 +133,7 @@ public class Player_Moving : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
 
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyController>().TakeDamage(damage);
                     GetComponent<Rigidbody2D>().velocity = Vector2.zero; //Resetea la velocidad
                 }
 
@@ -144,7 +144,7 @@ public class Player_Moving : MonoBehaviour
             }
             else
             {
-                timeBTattack -= Time.deltaTime;
+                timeBTattack -= Time.deltaTime; 
             }
       
 
