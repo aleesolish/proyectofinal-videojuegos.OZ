@@ -29,7 +29,7 @@ public class Player_Moving : MonoBehaviour
     public LayerMask whatIsGround; // Capas que detecta como suelo
 
     // DOBLE SALTO
-    public bool doubleJump = false;// variable del doble salto
+    public bool grabOnEdges = false;// variable del doble salto
 
     public GameObject frog;
 
@@ -41,6 +41,11 @@ public class Player_Moving : MonoBehaviour
     private int count;
     public Text PointText;
 
+
+
+    public EventTrigger Crouch;
+    public bool crouch= false;
+    public float goCrouch;
 
 
     public Animator camAnim;
@@ -87,6 +92,14 @@ public class Player_Moving : MonoBehaviour
                 Flip();
 
         }
+       float goCrouch= Input.GetAxis("Verticall");
+        Input.GetAxis("Vertical");
+        if (crouch)
+        {
+            anim.SetTrigger("Crouch");
+
+        }
+        // obtener la direccion del movimient
 
     }
 
@@ -106,7 +119,7 @@ public class Player_Moving : MonoBehaviour
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         // Diciendole al animator que tocamos el suelo
         anim.SetBool("Ground", grounded);
-
+        anim.SetBool("Hanging", grabOnEdges);
         if (!this.anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //Condicion que interrumpe el movimienot si se ataca
         {
 
@@ -116,7 +129,9 @@ public class Player_Moving : MonoBehaviour
                 {
 
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-                    doubleJump = true;
+                    anim.SetBool("Hanging", grabOnEdges);
+                    grabOnEdges = true;
+                  
                 }
             }
 
@@ -124,11 +139,11 @@ public class Player_Moving : MonoBehaviour
             else
             {
 
-                if (doubleJump && Input.GetKeyDown(KeyCode.Space))
+                if (grabOnEdges && Input.GetKeyDown(KeyCode.Space))
                 {
 
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce / 2));
-                    doubleJump = false;
+                   // GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce / 2));
+                    grabOnEdges = false;
                 }
             }
 
