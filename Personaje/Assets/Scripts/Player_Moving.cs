@@ -22,7 +22,7 @@ public class Player_Moving : MonoBehaviour
     public bool Damage;
 
     // SALTO
-    bool grounded = false;  // Referencia al animator
+    public bool grounded = false;  // Referencia al animator
     public Transform groundCheck;   // transform a los pies del personaje para comprobar si toca el suelo
     float groundRadius = 2f;   // diametro del circulo que detecta el suelo
     public static float jumpForce = 2500f; // Fuerza del salto
@@ -43,14 +43,13 @@ public class Player_Moving : MonoBehaviour
 
 
 
-    private EventTrigger Crouch;
-    public bool crouch= false;
-    public float goCrouch;
+    public float Crouch;
+    public bool crouching;
 
 
     public Animator camAnim;
 
-   
+
 
     private void Start()
     {
@@ -91,15 +90,12 @@ public class Player_Moving : MonoBehaviour
             else if (move < 0 && facingRight)
                 Flip();
 
-        }
-       float goCrouch= Input.GetAxis("Vertical");
-        Input.GetAxis("Vertical");
-        if (crouch)
-        {
-            anim.SetTrigger("Crouch");
+
+
+
 
         }
-        // obtener la direccion del movimient
+        anim.SetBool("Crouch", crouching);
 
     }
 
@@ -130,11 +126,15 @@ public class Player_Moving : MonoBehaviour
 
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 
-                   
+
 
                 }
             }
-        
+
+            Crouch = Input.GetAxis("Vertical");
+            CrouchFunction();
+
+
         }
     }
 
@@ -174,7 +174,7 @@ public class Player_Moving : MonoBehaviour
         if (other.gameObject.tag == "PickUp")
         {
             Destroy(other.gameObject);
-            count = count+1;
+            count = count + 1;
 
             SetCounter();
         }
@@ -206,13 +206,14 @@ public class Player_Moving : MonoBehaviour
     }
     void SetCounter()
     {
-        PointText.text = "Ruby: " +  count.ToString();
+        PointText.text = "Ruby: " + count.ToString();
 
 
     }
 
 
-    public void EnemyJump(){
+    public void EnemyJump()
+    {
         grounded = true;
     }
 
@@ -245,13 +246,29 @@ public class Player_Moving : MonoBehaviour
 
     }
 
-   
+
 
     public void Respawn()
     {
-       
+
         respawnPoint = GetComponent<Collider2D>().transform.position;
 
+    }
+
+
+
+    void CrouchFunction()
+    {
+
+        if (Crouch != 0 && grounded == true)
+        {
+            crouching = true;
+        }
+       
+
+        else {
+            crouching = false;
+        }
     }
 
 
