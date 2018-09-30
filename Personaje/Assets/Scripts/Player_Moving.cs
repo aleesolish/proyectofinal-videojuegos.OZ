@@ -28,7 +28,7 @@ public class Player_Moving : MonoBehaviour
     public static float jumpForce = 2500f; // Fuerza del salto
     public LayerMask whatIsGround; // Capas que detecta como suelo
 
-    // DOBLE SALTO
+    // COLGARSE ORILLA
     public bool grabOnEdges = false;// variable del doble salto
 
     public GameObject frog;
@@ -43,7 +43,7 @@ public class Player_Moving : MonoBehaviour
 
 
 
-    public EventTrigger Crouch;
+    private EventTrigger Crouch;
     public bool crouch= false;
     public float goCrouch;
 
@@ -92,7 +92,7 @@ public class Player_Moving : MonoBehaviour
                 Flip();
 
         }
-       float goCrouch= Input.GetAxis("Verticall");
+       float goCrouch= Input.GetAxis("Vertical");
         Input.GetAxis("Vertical");
         if (crouch)
         {
@@ -119,7 +119,7 @@ public class Player_Moving : MonoBehaviour
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         // Diciendole al animator que tocamos el suelo
         anim.SetBool("Ground", grounded);
-        anim.SetBool("Hanging", grabOnEdges);
+        float move = Input.GetAxis("Horizontal"); // obtener la direccion del movimiento
         if (!this.anim.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //Condicion que interrumpe el movimienot si se ataca
         {
 
@@ -129,28 +129,14 @@ public class Player_Moving : MonoBehaviour
                 {
 
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-                    anim.SetBool("Hanging", grabOnEdges);
-                    grabOnEdges = true;
-                  
+
+                   
+
                 }
             }
-
-
-            else
-            {
-
-                if (grabOnEdges && Input.GetKeyDown(KeyCode.Space))
-                {
-
-                   // GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce / 2));
-                    grabOnEdges = false;
-                }
-            }
-
-
+        
         }
     }
-
 
 
 

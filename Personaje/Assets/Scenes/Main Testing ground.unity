@@ -7323,7 +7323,6 @@ MonoBehaviour:
   HealthPlayer: {fileID: 0}
   resDelay: 3
   PointText: {fileID: 1877032425}
-  respawnPoint: {x: 0, y: 0, z: 0}
   currentHealth: 0
 --- !u!4 &1243566443
 Transform:
@@ -11321,7 +11320,6 @@ MonoBehaviour:
   HealthPlayer: {fileID: 0}
   resDelay: 0
   PointText: {fileID: 0}
-  respawnPoint: {x: 0, y: 0, z: 0}
   currentHealth: 0
 --- !u!1 &1881389303
 GameObject:
@@ -12592,7 +12590,6 @@ MonoBehaviour:
   HealthPlayer: {fileID: 0}
   resDelay: 0
   PointText: {fileID: 2142394798}
-  respawnPoint: {x: 0, y: 0, z: 0}
   currentHealth: 0
 --- !u!222 &2142394800
 CanvasRenderer:
