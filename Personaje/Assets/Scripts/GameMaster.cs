@@ -11,7 +11,7 @@ public class GameMaster : MonoBehaviour
     Animator anim;
     public Player_Moving gamePlayer;
     public PlayerHealth HealthPlayer;
-    public float resDelay;
+ 
     public Text PointText;
    
     public static float maxHealth = 100;

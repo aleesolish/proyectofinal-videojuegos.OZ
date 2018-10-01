@@ -14,7 +14,7 @@ public class Player_Moving : MonoBehaviour
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
     public Animator anim;
 
-    //PlayerHealth
+    //VIDA PERSONAJE
     [SerializeField]
     Slider HealthSlider;
     public static float maxHealth = 100;
@@ -28,24 +28,30 @@ public class Player_Moving : MonoBehaviour
     public static float jumpForce = 2500f; // Fuerza del salto
     public LayerMask whatIsGround; // Capas que detecta como suelo
 
+    // AGACHARSE
+    public float Crouch;
+    public bool crouching;
+
+
     // COLGARSE ORILLA
     public bool grabOnEdges = false;// variable del doble salto
 
+
+    // ENEMIGOS
+    public LayerMask whatIsEnemies;
+    public int damage;
     public GameObject frog;
 
 
-
-    public LayerMask whatIsEnemies;
-    public int damage;
+    // RE APARECER CUANDO CAE
     public Vector3 respawnPoint;
+
+
     private int count;
     public Text PointText;
 
 
-
-    public float Crouch;
-    public bool crouching;
-
+  
 
     public Animator camAnim;
 
@@ -161,7 +167,6 @@ public class Player_Moving : MonoBehaviour
 
         if (other.tag == "FallDetector")
         {
-            respawnPoint = GetComponent<Collider2D>().transform.position;
             Respawn();
         }
         if (other.tag == "Checkpoint")
@@ -251,7 +256,7 @@ public class Player_Moving : MonoBehaviour
     public void Respawn()
     {
 
-        respawnPoint = GetComponent<Collider2D>().transform.position;
+        GetComponent<CapsuleCollider2D>().transform.position = respawnPoint;
 
     }
 
