@@ -303,12 +303,12 @@ TextureImporter:
       name: Lion_Sprites03_8
       rect:
         serializedVersion: 2
-        x: 84
+        x: 94
         y: 501
         width: 1447
         height: 719
       alignment: 9
-      pivot: {x: 0.4103341, y: 0.58328676}
+      pivot: {x: 0.4068855, y: 0.6526923}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,7 +328,7 @@ TextureImporter:
         width: 1681
         height: 666
       alignment: 9
-      pivot: {x: 0.50228864, y: 0.667511}
+      pivot: {x: 0.49635154, y: 0.68998986}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,7 +348,7 @@ TextureImporter:
         width: 1312
         height: 489
       alignment: 9
-      pivot: {x: 0.4120355, y: 0.73601085}
+      pivot: {x: 0.40823215, y: 0.91970134}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +368,7 @@ TextureImporter:
         width: 1377
         height: 515
       alignment: 9
-      pivot: {x: 0.44133177, y: 0.58963823}
+      pivot: {x: 0.44858012, y: 0.91909194}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
