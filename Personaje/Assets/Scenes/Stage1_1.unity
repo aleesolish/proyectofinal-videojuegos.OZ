@@ -164,11 +164,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4610357447776018, guid: 68c8c4455cba544eda2b0e852618aad3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.48
+      value: 2.86
       objectReference: {fileID: 0}
     - target: {fileID: 4610357447776018, guid: 68c8c4455cba544eda2b0e852618aad3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.58
+      value: 8.87
       objectReference: {fileID: 0}
     - target: {fileID: 4610357447776018, guid: 68c8c4455cba544eda2b0e852618aad3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -492,6 +492,68 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 123370ec1e6a5453ab0099968e48358c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &677044711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1809861245774048, guid: 123370ec1e6a5453ab0099968e48358c,
+    type: 2}
+  m_PrefabInternal: {fileID: 520828446}
+--- !u!68 &677044723
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677044711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -216.5936, y: -53.64364}
+  - {x: -214.2994, y: -53.63188}
+  - {x: -213.93915, y: -52.215645}
+  - {x: -205.96771, y: -52.2126}
+--- !u!68 &677044724
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677044711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -213.7359, y: -56.449844}
+  - {x: -211.80212, y: -56.46383}
+  - {x: -210.3606, y: -55.819946}
+  - {x: -206.79155, y: -55.8169}
+--- !u!68 &677044725
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677044711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -219.50278, y: -48.829323}
+  - {x: -216.69368, y: -48.84331}
+  - {x: -215.40662, y: -49.51242}
+  - {x: -213.97441, y: -49.509373}
 --- !u!1 &694439077
 GameObject:
   m_ObjectHideFlags: 0
