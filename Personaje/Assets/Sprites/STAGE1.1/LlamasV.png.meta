@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 57cc8eb017b614d1290fa2ff3ac62f5d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LlamasV_0
+    21300002: LlamasV_1
+    21300004: LlamasV_2
+    21300006: LlamasV_3
+    21300008: LlamasV_4
+    21300010: LlamasV_5
+    21300012: LlamasV_6
+    21300014: LlamasV_7
+    21300016: LlamasV_8
+    21300018: LlamasV_9
+    21300020: LlamasV_10
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LlamasV_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1618
+        width: 471
+        height: 429
+      alignment: 9
+      pivot: {x: 0.46291745, y: 0.063788995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c014a3b62fdf41a085c28e993a33de3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1617
+        width: 464
+        height: 422
+      alignment: 9
+      pivot: {x: 0.52150965, y: 0.074290775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccce0b4c5c9d4625af438da32fe1709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1615
+        width: 484
+        height: 425
+      alignment: 9
+      pivot: {x: 0.45875815, y: 0.07142521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2673161c1204e8aabe85cef6e12cf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_3
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1615
+        width: 482
+        height: 433
+      alignment: 9
+      pivot: {x: 0.52070636, y: 0.06781866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fb3774f23d346e5a82aa6f0c54972f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 479
+        height: 624
+      alignment: 9
+      pivot: {x: 0.42707354, y: 0.044159524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04a75cefbfcd4796805aeb46655ddf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_5
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 455
+        width: 536
+        height: 806
+      alignment: 9
+      pivot: {x: 0.4860347, y: 0.035646312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce50acd7c991a40449cb167ba3ca11a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_6
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 453
+        width: 511
+        height: 940
+      alignment: 9
+      pivot: {x: 0.558594, y: 0.030172892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6c2af7bfa7b4d0897c166af704a84d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_7
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 455
+        width: 624
+        height: 1046
+      alignment: 9
+      pivot: {x: 0.53598744, y: 0.025305666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d371b318907884c75be6a1ccf352ac3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_8
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 450
+        width: 559
+        height: 1088
+      alignment: 9
+      pivot: {x: 0.48214543, y: 0.029870454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d268a61e50aaf4c8fb5435c7158c0259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_9
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 448
+        width: 547
+        height: 1092
+      alignment: 9
+      pivot: {x: 0.5273687, y: 0.03159254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aaeee7f1a16401dbebc81ad71ddf3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LlamasV_10
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 453
+        width: 537
+        height: 1105
+      alignment: 9
+      pivot: {x: 0.54646444, y: 0.028071007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fec22dae5e64cb8935d39c6d1802bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bd6c2992173db40b3b50e37630188c9c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
