@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Engranes
   - FallDetector
+  - PickUp
+  - FireDamage
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -16,9 +19,9 @@ TagManager:
   - 
   - 
   - Personaje
-  - 
-  - 
-  - 
+  - Ground
+  - Walls
+  - Enemies
   - 
   - 
   - 

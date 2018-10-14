@@ -14,7 +14,7 @@ public class Player_Moving : MonoBehaviour
     private AudioSource sound;
 
     // MOVIMIENTO
-    public static float topSpeed = 5f; // Maxima velocidad del personaje
+    public static float topSpeed = 18f; // Maxima velocidad del personaje
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
     public Animator anim;
 
@@ -28,8 +28,8 @@ public class Player_Moving : MonoBehaviour
     // SALTO
     public bool grounded = false;  // Referencia al animator
     public Transform groundCheck;   // transform a los pies del personaje para comprobar si toca el suelo
-    float groundRadius = .5f;   // diametro del circulo que detecta el suelo
-    public static float jumpForce = 1300f; // Fuerza del salto
+    float groundRadius = 2f;   // diametro del circulo que detecta el suelo
+    public static float jumpForce = 2200f; // Fuerza del salto
     public LayerMask whatIsGround; // Capas que detecta como suelo
 
     // ATAQUE
