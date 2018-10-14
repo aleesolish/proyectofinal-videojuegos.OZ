@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4598060543079370}
   - component: {fileID: 95800193950206470}
   - component: {fileID: 212895031804599258}
+  - component: {fileID: 70643080604267476}
   m_Layer: 0
   m_Name: Flamas
-  m_TagString: Untagged
+  m_TagString: FireDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,13 +35,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634827545086606}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -236.07, y: -46.88, z: 0}
-  m_LocalScale: {x: 0.37291, y: 0.37291, z: 0.37291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -236.36, y: -46.765, z: -0.89514}
+  m_LocalScale: {x: 0.57256997, y: 0.57256997, z: 0.57256997}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70643080604267476
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634827545086606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.061966266, y: 0.85723615}
+  m_Size: {x: 1.2652639, y: 2.681794}
+  m_Direction: 0
 --- !u!95 &95800193950206470
 Animator:
   serializedVersion: 3
@@ -92,7 +108,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1466449917
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 57cc8eb017b614d1290fa2ff3ac62f5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

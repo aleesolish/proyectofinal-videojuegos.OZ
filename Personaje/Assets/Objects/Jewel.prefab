@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4637141009240984}
   - component: {fileID: 212282384859109400}
   - component: {fileID: 95260990911817372}
+  - component: {fileID: 136598992472968770}
   m_Layer: 0
   m_Name: Jewel
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1323163494246850}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -860.93, y: -614.25995, z: 8.93}
-  m_LocalScale: {x: 1.4062887, y: 1.4062887, z: 1.4062887}
+  m_LocalRotation: {x: -0, y: 0.008726839, z: -0, w: -0.9999619}
+  m_LocalPosition: {x: -9.983, y: 14.24, z: 0}
+  m_LocalScale: {x: 0.6671187, y: 0.6211594, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 359, z: 0}
 --- !u!95 &95260990911817372
 Animator:
   serializedVersion: 3
@@ -50,7 +51,7 @@ Animator:
   m_GameObject: {fileID: 1323163494246850}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e19be3324c0664c9bbbad3693c41c26c, type: 2}
+  m_Controller: {fileID: 9100000, guid: cfd272dd0a4ab43d5aac247fee3903e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -59,6 +60,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &136598992472968770
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1323163494246850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.35745725
+  m_Height: 1.6469111
+  m_Direction: 1
+  m_Center: {x: 0.00000022336596, y: 0.012396505, z: 2.0900506e-16}
 --- !u!212 &212282384859109400
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,8 +105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2142974277
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 91be5d6fa22bb43099e1428989218530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

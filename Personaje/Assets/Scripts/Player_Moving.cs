@@ -9,6 +9,10 @@ public class Player_Moving : MonoBehaviour
 
     public GameMaster LevelManager;
 
+    //AUDIO
+    public AudioClip jump;
+    private AudioSource sound;
+
     // MOVIMIENTO
     public static float topSpeed = 5f; // Maxima velocidad del personaje
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
@@ -49,13 +53,14 @@ public class Player_Moving : MonoBehaviour
 
     public int damage;
     public GameObject frog;
+    public int fireDamage;
 
 
     // RE APARECER CUANDO CAE
     public Vector3 respawnPoint;
 
 
-    private int count;
+    private float count;
     public Text PointText;
 
 
@@ -63,7 +68,10 @@ public class Player_Moving : MonoBehaviour
 
     public Animator camAnim;
 
-
+    void Awake()
+    {
+        sound = GetComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -140,6 +148,7 @@ public class Player_Moving : MonoBehaviour
                 {
 
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+                    sound.PlayOneShot(jump);
 
 
 
@@ -205,13 +214,16 @@ public class Player_Moving : MonoBehaviour
         {
             respawnPoint = other.transform.position;
         }
-
-
-
+        if (other.gameObject.tag == "FireDamage")
+        {
+            currentHealth = currentHealth - fireDamage;
+            //Debug.Log(currentHealth);
+        }
         if (other.gameObject.tag == "PickUp")
         {
             Destroy(other.gameObject);
-            count = count + 1;
+            count = count + 0.5f;
+            Debug.Log(count);
 
             SetCounter();
         }
@@ -222,7 +234,7 @@ public class Player_Moving : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Debug.Log("Enemy touched");
-            currentHealth -= 30;
+            currentHealth -= damage;
             Debug.Log(currentHealth);
         }
         if (other.gameObject.tag == "x")
@@ -232,13 +244,17 @@ public class Player_Moving : MonoBehaviour
             float posY = other.gameObject.transform.parent.transform.localPosition.y;
             float posZ = other.gameObject.transform.parent.transform.localPosition.z;
             other.gameObject.transform.parent.transform.localPosition += new Vector3(posX, posY, posZ);
-            TakeDamage(30);
+            TakeDamage(damage);
         }
         if (other.gameObject.tag == "y")
         {
             Destroy(other.gameObject.transform.parent.gameObject);
             //frog = GameObject.FindWithTag("Enemy");
         }
+
+
+        //GEMAS
+
 
     }
     void SetCounter()
@@ -313,5 +329,8 @@ public class Player_Moving : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
+
+
+
 
 }
