@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 84caa95367f964695922febd03e1ed65
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Lion_Sprites05_0
+    21300002: Lion_Sprites05_1
+    21300004: Lion_Sprites05_2
+    21300006: Lion_Sprites05_3
+    21300008: Lion_Sprites05_4
+    21300010: Lion_Sprites05_5
+    21300012: Lion_Sprites05_6
+    21300014: Lion_Sprites05_7
+    21300016: Lion_Sprites05_8
+    21300018: Lion_Sprites05_9
+    21300020: Lion_Sprites05_10
+    21300022: Lion_Sprites05_11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lion_Sprites05_0
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2068
+        width: 679
+        height: 1677
+      alignment: 9
+      pivot: {x: 0.11783043, y: 0.5178543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64841c2e926a406daa773a47f7b2a74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_1
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 2153
+        width: 669
+        height: 1587
+      alignment: 9
+      pivot: {x: 0.11957709, y: 0.52830017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b03c5c7c125484289c814888299eaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_2
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 2173
+        width: 684
+        height: 1587
+      alignment: 9
+      pivot: {x: 0.2008767, y: 0.57546717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf92931fa7de49ac8734efc312d703c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_3
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 2288
+        width: 979
+        height: 1517
+      alignment: 9
+      pivot: {x: 0.09731385, y: 0.54934347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5b15acf05f04f17b5233e03f859999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_4
+      rect:
+        serializedVersion: 2
+        x: 3986
+        y: 2517
+        width: 973
+        height: 1308
+      alignment: 9
+      pivot: {x: 0.058929726, y: 0.6068252}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914263a60346d4fffa1c64b8ff237a67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_5
+      rect:
+        serializedVersion: 2
+        x: 5029
+        y: 3016
+        width: 1033
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.21015, y: 0.67874146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421aadd1cbb39448c89a8542f9102e99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1150
+        width: 1607
+        height: 748
+      alignment: 9
+      pivot: {x: 0.4658415, y: 0.5934008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81970746b1114c00a38c682f37f2f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_7
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1160
+        width: 1412
+        height: 898
+      alignment: 9
+      pivot: {x: 0.48232937, y: 0.48332897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0536bed8dda54dbaabf0d880667ccbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_8
+      rect:
+        serializedVersion: 2
+        x: 3846
+        y: 1160
+        width: 1453
+        height: 848
+      alignment: 9
+      pivot: {x: 0.45245022, y: 0.51236266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736050597582e4eae9153e997ab9f47b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_9
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 1165
+        width: 1906
+        height: 733
+      alignment: 9
+      pivot: {x: 0.4371639, y: 0.56127214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e0db635ca2742a0928fcc3372a29c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 162
+        width: 1547
+        height: 723
+      alignment: 9
+      pivot: {x: 0.43225905, y: 0.6104343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae3604b10c6741da8409307c45a7ca3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lion_Sprites05_11
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 187
+        width: 1627
+        height: 723
+      alignment: 9
+      pivot: {x: 0.46319434, y: 0.59663004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e90d5ede87f4c0aa158084f13dc840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 107ea96711af44765aaa1d2e228f41f0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
