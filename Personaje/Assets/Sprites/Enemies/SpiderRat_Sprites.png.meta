@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: 38fd7971c6f604341b2ea69559829b88
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpiderRat_Sprites_0
+    21300002: SpiderRat_Sprites_1
+    21300004: SpiderRat_Sprites_2
+    21300006: SpiderRat_Sprites_3
+    21300008: SpiderRat_Sprites_4
+    21300010: SpiderRat_Sprites_5
+    21300012: SpiderRat_Sprites_6
+    21300014: SpiderRat_Sprites_7
+    21300016: SpiderRat_Sprites_8
+    21300018: SpiderRat_Sprites_9
+    21300020: SpiderRat_Sprites_10
+    21300022: SpiderRat_Sprites_11
+    21300024: SpiderRat_Sprites_12
+    21300026: SpiderRat_Sprites_13
+    21300028: SpiderRat_Sprites_14
+    21300030: SpiderRat_Sprites_15
+    21300032: SpiderRat_Sprites_16
+    21300034: SpiderRat_Sprites_17
+    21300036: SpiderRat_Sprites_18
+    21300038: SpiderRat_Sprites_19
+    21300040: SpiderRat_Sprites_20
+    21300042: SpiderRat_Sprites_21
+    21300044: SpiderRat_Sprites_22
+    21300046: SpiderRat_Sprites_23
+    21300048: SpiderRat_Sprites_24
+    21300050: SpiderRat_Sprites_25
+    21300052: SpiderRat_Sprites_26
+    21300054: SpiderRat_Sprites_27
+    21300056: SpiderRat_Sprites_28
+    21300058: SpiderRat_Sprites_29
+    21300060: SpiderRat_Sprites_30
+    21300062: SpiderRat_Sprites_31
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1884
+        width: 398
+        height: 117
+      alignment: 9
+      pivot: {x: 0.46124774, y: 0.46122962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722836401bdd144e8887cb4d6961898e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1888
+        width: 388
+        height: 112
+      alignment: 9
+      pivot: {x: 0.44154263, y: 0.47569928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c43e2bce9b342cd9205b62e959226c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1887
+        width: 406
+        height: 115
+      alignment: 9
+      pivot: {x: 0.4083805, y: 0.50000215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e64f1c3ae354c5485082c7876f7f41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1883
+        width: 389
+        height: 115
+      alignment: 9
+      pivot: {x: 0.38571835, y: 0.5788935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009e7c49502a64b6b95f494f4d06750a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 1881
+        width: 369
+        height: 118
+      alignment: 9
+      pivot: {x: 0.3893593, y: 0.6537734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e6dac8670e341e5ad91f698dc9525c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 1878
+        width: 379
+        height: 121
+      alignment: 9
+      pivot: {x: 0.41142848, y: 0.5899769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f289659a27024c728899de939132b8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 2828
+        y: 1875
+        width: 365
+        height: 120
+      alignment: 9
+      pivot: {x: 0.413003, y: 0.6058482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751df231951ef45468925f87017fc1a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1637
+        width: 392
+        height: 111
+      alignment: 9
+      pivot: {x: 0.4213091, y: 0.5163475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec6fc8ed053b44688e426f16bd057da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1638
+        width: 396
+        height: 116
+      alignment: 9
+      pivot: {x: 0.45417878, y: 0.46089542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc2c902916f14e2caff5deb5ebbfe39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1639
+        width: 382
+        height: 113
+      alignment: 9
+      pivot: {x: 0.45487458, y: 0.3554817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e5c216c665445cc818814a1be85a51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1638
+        width: 341
+        height: 113
+      alignment: 9
+      pivot: {x: 0.48935768, y: 0.18687668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588e95ae5be994ff1be6766403d7eb71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 1637
+        width: 334
+        height: 125
+      alignment: 9
+      pivot: {x: 0.50543284, y: 0.14435548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f824379b2ae4132b39315c6dead28a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1357
+        width: 373
+        height: 110
+      alignment: 9
+      pivot: {x: 0.44648862, y: 0.50000113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72de9035c6ac844f7ab19a523d8eeaab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1355
+        width: 343
+        height: 119
+      alignment: 9
+      pivot: {x: 0.47619432, y: 0.3551446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf2685117ff644a6b67cf773ab8dc66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1381
+        width: 268
+        height: 176
+      alignment: 9
+      pivot: {x: 0.5304679, y: 0.22163807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a61046c09b14fc3858f753f299d29f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1354
+        width: 379
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4832432, y: 0.24972218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55df7f1c8634f41109b1f50059d0b096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1354
+        width: 380
+        height: 101
+      alignment: 9
+      pivot: {x: 0.4498625, y: 0.38322464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992f372fd52e3427389cfbd844f7a3e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1337
+        width: 329
+        height: 146
+      alignment: 9
+      pivot: {x: 0.51103085, y: 0.15201098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e858b3b679944c83ab63f8d13bde9b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 1333
+        width: 318
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5199719, y: 0.155472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b868b7dc4d04e05a3e9006a40777de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 1334
+        width: 307
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5413735, y: 0.14243379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7bb823b2ad247d3bd08faffb78ea56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1010
+        width: 389
+        height: 107
+      alignment: 9
+      pivot: {x: 0.42303455, y: 0.55087477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcd14829634349ae81d6a86a663e569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1013
+        width: 386
+        height: 126
+      alignment: 9
+      pivot: {x: 0.41773567, y: 0.62240845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a0b81bcff3849efad83997f3dca530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1014
+        width: 381
+        height: 129
+      alignment: 9
+      pivot: {x: 0.43094376, y: 0.59846246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74d6598b3c774343a1758e0ef8bbbfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 978
+        width: 372
+        height: 174
+      alignment: 9
+      pivot: {x: 0.36586246, y: 0.3644332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596259cff4f8b4ac2ae139666e90e08f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 887
+        width: 494
+        height: 371
+      alignment: 9
+      pivot: {x: 0.2869599, y: 0.41196427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c2720b01f76429bb7928e0b6864801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 865
+        width: 640
+        height: 336
+      alignment: 9
+      pivot: {x: 0.32847175, y: 0.5216014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d36f6f41a11648cc917b88f6fe22a6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 3044
+        y: 848
+        width: 718
+        height: 359
+      alignment: 9
+      pivot: {x: 0.38627705, y: 0.5303265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381487d56a7340398a5e373620fe232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 534
+        width: 730
+        height: 284
+      alignment: 9
+      pivot: {x: 0.3744752, y: 0.62458843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa153efac8c045f7ba1fc86a0849d97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 640
+        width: 335
+        height: 154
+      alignment: 9
+      pivot: {x: 0.50541663, y: 0.15830578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa83f2093d57430aaba6ef05705d2ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 636
+        width: 328
+        height: 168
+      alignment: 9
+      pivot: {x: 0.5138304, y: 0.15977877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3735c40f98e684f02b5a7c765d5fe1b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 639
+        width: 311
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5291724, y: 0.17184296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a78b01f59e5d4e3b84c290bd74db408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpiderRat_Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 639
+        width: 312
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5581579, y: 0.17184296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89ed243e70a0482da277ecf2f185730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5cda1fbb61eb843a8a98ba841e3f5659
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

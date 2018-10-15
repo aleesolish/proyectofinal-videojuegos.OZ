@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 7d7c9db31b63b44fa90e7adfb77c8a4e
+guid: f1e9ce17735f94baca9e1b6f09d3cb86
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: UI.-Contador_0
+    21300002: UI.-Contador_1
+    21300004: UI.-Contador_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,7 +63,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -71,7 +74,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -82,7 +85,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -93,7 +96,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: tvOS
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -104,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -115,7 +118,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -126,11 +129,71 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI.-Contador_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 854
+        width: 2053
+        height: 585
+      alignment: 9
+      pivot: {x: 0.40214667, y: 0.5661375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee97d57f5c0894989a929ec60628343d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI.-Contador_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 281
+        width: 669
+        height: 584
+      alignment: 9
+      pivot: {x: 0.48442948, y: 0.47706687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1086d3879fca465a878db6ffe2d7618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI.-Contador_2
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 443
+        width: 476
+        height: 420
+      alignment: 9
+      pivot: {x: 0.47186357, y: 0.46811205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3828b59aee44309bf010209673b233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e000346ebf49499d8ade0cc23354c74
     vertices: []
     indices: 
     edges: []
