@@ -14,7 +14,7 @@ public class Player_Moving : MonoBehaviour
     private AudioSource sound;
 
     // MOVIMIENTO
-    public static float topSpeed = 18f; // Maxima velocidad del personaje
+    public float topSpeed = 25f; // Maxima velocidad del personaje
     bool facingRight = true; // Indica al Sprita a qué direccón apuntar
     public Animator anim;
 
