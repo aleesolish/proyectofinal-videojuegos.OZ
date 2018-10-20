@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 50395334464001520}
   - component: {fileID: 61485962718831636}
   m_Layer: 0
-  m_Name: "RatAran\u0303a"
+  m_Name: "RatAra\xF1a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

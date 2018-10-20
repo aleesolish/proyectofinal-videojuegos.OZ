@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "RatAran\u0303a"
+  m_Name: "RatAra\xF1a"
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
