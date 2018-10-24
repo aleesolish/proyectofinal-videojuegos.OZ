@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114249028143172996}
   - component: {fileID: 70246400606076888}
   - component: {fileID: 70327635698982780}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player1 (LION)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838552953237986}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: AttackPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4213808501122350}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,8 +83,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326399039098930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.1, z: 0}
-  m_LocalScale: {x: 0.76554316, y: 0.76554316, z: 0.76554316}
+  m_LocalPosition: {x: -66.30002, y: 61.90003, z: 0}
+  m_LocalScale: {x: 0.7655436, y: 0.7655436, z: 0.76554316}
   m_Children:
   - {fileID: 4213808501122350}
   - {fileID: 4838552953237986}
@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335629692883448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.47, y: -1.05, z: 0}
+  m_LocalPosition: {x: 6.1, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4610357447776018}
@@ -136,8 +136,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.7458532, y: -1.0324934}
-  m_Size: {x: 13.049564, y: 6.2550907}
+  m_Offset: {x: 2.5109596, y: -1.7371979}
+  m_Size: {x: 8.664844, y: 4.845746}
   m_Direction: 1
 --- !u!70 &70327635698982780
 CapsuleCollider2D:
@@ -151,8 +151,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.7458532, y: -1.0324934}
-  m_Size: {x: 13.049564, y: 6.2550907}
+  m_Offset: {x: 2.5109515, y: -1.6980402}
+  m_Size: {x: 8.508202, y: 4.767407}
   m_Direction: 1
 --- !u!95 &95102249857589270
 Animator:
@@ -187,6 +187,9 @@ MonoBehaviour:
   currentHealth: 0
   Damage: 0
   LevelManager: {fileID: 0}
+  TimeAfterHurt: 2
+  Player_Moving: {fileID: 0}
+  Paused_Menu: {fileID: 0}
 --- !u!114 &114897113083306812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,22 +202,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
+  jump: {fileID: 0}
+  topSpeed: 25
   anim: {fileID: 0}
   HealthSlider: {fileID: 0}
   currentHealth: 0
   Damage: 0
+  grounded: 0
   groundCheck: {fileID: 4213808501122350}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 823
-  doubleJump: 0
-  frog: {fileID: 0}
+    m_Bits: 567
+  startTimeBtAttack: 0
+  attackPos: {fileID: 4838552953237986}
+  attackRange: 3.74
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 2048
+  Crouch: 0
+  crouching: 0
+  grabOnEdges: 0
   damage: 25
+  frog: {fileID: 0}
+  fireDamage: 0
   respawnPoint: {x: 0, y: 0, z: 0}
   PointText: {fileID: 0}
+  myCols: []
+  Hurt: 0
   camAnim: {fileID: 0}
 --- !u!212 &212888028466200194
 SpriteRenderer:
@@ -248,9 +262,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2022459769
-  m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingLayerID: -592443341
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300022, guid: 7f15e3c63529e43429e144a311e6d210, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

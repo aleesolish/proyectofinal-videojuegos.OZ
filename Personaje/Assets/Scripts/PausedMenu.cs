@@ -61,6 +61,11 @@ public class PausedMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void DeathRestart()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
 
 

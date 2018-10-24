@@ -64,7 +64,9 @@ public class Player_Moving : MonoBehaviour
     public Text PointText;
 
 
-  
+    public Collider2D[] myCols;
+    public static Player_Moving instance;
+    public bool Hurt= false;
 
     public Animator camAnim;
 
@@ -75,6 +77,8 @@ public class Player_Moving : MonoBehaviour
 
     private void Start()
     {
+        instance = this;
+        myCols = this.GetComponents<Collider2D>();
         LevelManager = FindObjectOfType<GameMaster>();
         anim = GetComponent<Animator>();
 
@@ -164,18 +168,20 @@ public class Player_Moving : MonoBehaviour
         // ATAQUE
         if (timeBtAttack <= startTimeBtAttack)
         {
-            if(Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 anim.SetTrigger("Attack");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                for (int i = 0; i< enemiesToDamage.Length; i++){
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
 
                     enemiesToDamage[i].GetComponent<Enemy>().Health -= damage;
                 }
             }
             timeBtAttack = startTimeBtAttack;
         }
-        else {
+        else
+        {
             timeBtAttack -= Time.deltaTime;
         }
 
@@ -183,7 +189,7 @@ public class Player_Moving : MonoBehaviour
 
     }
 
- 
+
 
 
 
@@ -231,12 +237,7 @@ public class Player_Moving : MonoBehaviour
         {
             topSpeed = 7f;
         }
-        if (other.gameObject.tag == "Enemy")
-        {
-            Debug.Log("Enemy touched");
-            currentHealth -= damage;
-            Debug.Log(currentHealth);
-        }
+
         if (other.gameObject.tag == "x")
         {
             Debug.LogWarning("Entra de lado");
@@ -317,9 +318,10 @@ public class Player_Moving : MonoBehaviour
         {
             crouching = true;
         }
-       
 
-        else {
+
+        else
+        {
             crouching = false;
         }
     }
@@ -331,6 +333,35 @@ public class Player_Moving : MonoBehaviour
     }
 
 
+
+
+    public void TriggerHurt(float HurtTime)
+    {
+        StartCoroutine(HurtBlinker(HurtTime));
+    }
+
+    IEnumerator HurtBlinker(float HurtTime)
+    {
+
+        int enemyLayer =LayerMask.NameToLayer("Enemy");//  ignorar colision con enemigos
+        int playerLayer = LayerMask.NameToLayer("Player");
+        Physics2D.IgnoreLayerCollision(enemyLayer, playerLayer);
+        foreach (Collider2D collider in Player_Moving.instance.myCols)
+        {
+            collider.enabled = false;
+            collider.enabled = true;
+       
+        anim.SetBool("Hurt", Hurt);      // Comenzar Loop de parpadeo
+        }
+
+
+
+        yield return new WaitForSeconds(HurtTime);  // Tiempo en que no puede ser dañado de nuevo
+
+       
+        Physics2D.IgnoreLayerCollision(enemyLayer, playerLayer, false);   // Para de parpadear
+       
+    }
 
 
 }

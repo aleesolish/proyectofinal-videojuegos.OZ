@@ -9,6 +9,11 @@ TagManager:
   - PickUp
   - FireDamage
   - Checkpoint
+  - Enemy
+  - TurnAround
+  - Walls
+  - Deadly
+  - Neutralized
   layers:
   - Default
   - TransparentFX
@@ -18,10 +23,10 @@ TagManager:
   - UI
   - 
   - 
-  - Personaje
+  - Player
   - Ground
   - Walls
-  - Enemies
+  - Enemy
   - 
   - 
   - 
@@ -49,9 +54,9 @@ TagManager:
   - name: Background
     uniqueID: 2344144641
     locked: 0
-  - name: Foreground
-    uniqueID: 3170246813
-    locked: 0
   - name: Midground
     uniqueID: 3702523955
+    locked: 0
+  - name: Foreground
+    uniqueID: 3170246813
     locked: 0

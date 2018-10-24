@@ -22,7 +22,9 @@ GameObject:
   - component: {fileID: 95261466167333506}
   - component: {fileID: 212935882243626326}
   - component: {fileID: 70634182738600442}
-  m_Layer: 0
+  - component: {fileID: 114998770781245748}
+  - component: {fileID: 70937797086435506}
+  m_Layer: 9
   m_Name: Flamas 1
   m_TagString: FireDamage
   m_Icon: {fileID: 0}
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966242893973868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.45, y: 8.35, z: 0.8734829}
+  m_LocalPosition: {x: -15.58, y: 8.11, z: 1.935983}
   m_LocalScale: {x: 1.9892606, y: 1.9892606, z: 1.9892606}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +59,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.061966266, y: 0.85723615}
   m_Size: {x: 1.2652639, y: 2.681794}
   m_Direction: 0
+--- !u!70 &70937797086435506
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966242893973868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08537552, y: 4.8841867}
+  m_Size: {x: 1.5599513, y: 10.735695}
+  m_Direction: 0
 --- !u!95 &95261466167333506
 Animator:
   serializedVersion: 3
@@ -75,6 +92,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114998770781245748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966242893973868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbc7eb647d524db6b08b352a0ea3446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlamaAlta: {fileID: 70937797086435506}
+  FlamaBaja: {fileID: 70634182738600442}
+  anim: {fileID: 0}
+  Llama: 0
+  cool: 0
 --- !u!212 &212935882243626326
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -108,8 +141,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -592443341
-  m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 814b49730ec9e4f78810860235688bac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

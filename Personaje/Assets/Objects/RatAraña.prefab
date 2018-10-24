@@ -19,20 +19,48 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4756987601011064}
-  - component: {fileID: 114541126206348572}
-  - component: {fileID: 114043807730259628}
   - component: {fileID: 95022627676959980}
   - component: {fileID: 212039134465071502}
   - component: {fileID: 70905126034002388}
   - component: {fileID: 50395334464001520}
   - component: {fileID: 61485962718831636}
-  m_Layer: 0
+  - component: {fileID: 114005658018412374}
+  - component: {fileID: 70431370535208386}
+  m_Layer: 11
   m_Name: "RatAran\u0303a"
-  m_TagString: Untagged
+  m_TagString: Deadly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1496716927902968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4388869060988776}
+  m_Layer: 11
+  m_Name: Weakness
+  m_TagString: Deadly
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4388869060988776
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496716927902968}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.02, y: 0.27, z: 0}
+  m_LocalScale: {x: 1.719558, y: 1.719558, z: 1.719558}
+  m_Children: []
+  m_Father: {fileID: 4756987601011064}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4756987601011064
 Transform:
   m_ObjectHideFlags: 1
@@ -40,9 +68,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1496296874291148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.9, y: -26.19, z: 0}
+  m_LocalPosition: {x: -56.43447, y: 66.77447, z: 0}
   m_LocalScale: {x: 2.750315, y: 2.750315, z: 2.750315}
-  m_Children: []
+  m_Children:
+  - {fileID: 4388869060988776}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65,7 +94,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &61485962718831636
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -91,6 +120,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0617547, y: 0.35879707}
   m_EdgeRadius: 0
+--- !u!70 &70431370535208386
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496296874291148}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.9707127, y: -0.03791674}
+  m_Size: {x: 2.1210728, y: 0.7570406}
+  m_Direction: 1
 --- !u!70 &70905126034002388
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -124,7 +168,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114043807730259628
+--- !u!114 &114005658018412374
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,27 +176,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496296874291148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d499ca47fccd471dbbb6b32c8e8cd00, type: 3}
+  m_Script: {fileID: 11500000, guid: 27f3f2120c02049528ca48016d0e86ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  speed: 0
-  BloodEffect: {fileID: 0}
---- !u!114 &114541126206348572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496296874291148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808c39ad4130941c79c24e2267e30e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 5
-  speed: 8
-  limitedSpeed: 1
-  player: {fileID: 0}
+  moveSpeed: 8
+  Weakness: {fileID: 4388869060988776}
+  colliding: 0
+  rb: {fileID: 50395334464001520}
 --- !u!212 &212039134465071502
 SpriteRenderer:
   m_ObjectHideFlags: 1

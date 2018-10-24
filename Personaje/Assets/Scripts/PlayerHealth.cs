@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour
+{
     Animator anim;
     [SerializeField]
     Slider HealthSlider;
 
-   public static float maxHealth = 100;
+    public static float maxHealth = 100f;
     public float currentHealth;
     public bool Damage;
     public GameMaster LevelManager;
-   
+    public float TimeAfterHurt = 2;
 
+
+    public Player_Moving Player_Moving;
+    public PausedMenu Paused_Menu;
     void Start()
     {
 
@@ -29,34 +33,75 @@ public class PlayerHealth : MonoBehaviour {
 
     }
 
-    private void OnTriggerStay2D(Collider2D col)
+
+
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        RatMove RatAraña = collision.collider.GetComponent<RatMove>();
+        Engrane Engranes = collision.collider.GetComponent<Engrane>();
+        Flamas FireDamage = collision.collider.GetComponent<Flamas>();
 
-        if (col.gameObject.tag == "Spikes")
+
+
+
+        if (Engranes != null)
         {
-            HealthSlider.value -= 1.5f;
+            HealthSlider.value -= 50;
             currentHealth = HealthSlider.value;
-            anim.SetTrigger("Damage"); // Activa el Trigger en el Animator
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero; //Resetea la velocidad del personaje para que no avance mientras ataca
+            anim.SetTrigger("Hurt"); // Activa el Trigger en el Animator
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(-25, 1200)); //Resetea la velocidad del personaje para que no avance mientras ataca
+            Hurt();
         }
 
-        if (col.gameObject.tag == "Engranes")
+        if (FireDamage != null)
         {
-            HealthSlider.value -= 1.5f;
+            HealthSlider.value -= 50;
             currentHealth = HealthSlider.value;
-            anim.SetTrigger("Damage"); // Activa el Trigger en el Animator
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero; //Resetea la velocidad del personaje para que no avance mientras ataca
+            anim.SetTrigger("Hurt"); // Activa el Trigger en el Animator
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(-25, 1200)); //Resetea la velocidad del personaje para que no avance mientras ataca
+            Hurt();
         }
+
+
+
     }
 
-    void TakeDamage(int amount)
+    private void OnTriggerEnter2D(CapsuleCollider2D other)
     {
-        currentHealth -= amount;
+        RatMove RatAraña = gameObject.GetComponent<RatMove>();
+        if (gameObject.tag == "Deadly"){
+
+            HealthSlider.value -= 35f;
+            currentHealth = HealthSlider.value;
+            anim.SetTrigger("Hurt"); // Activa el Trigger en el Animator
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(-25, 1200)); //Resetea la velocidad del personaje para que no avance mientras ataca
+            Hurt();
+}
+
+
        
-      
-         
+
+
+    }
+    void Hurt(){
+       
+
+        if(currentHealth <= 0 )
+        {
+
+            Player_Moving.TriggerHurt(TimeAfterHurt);
+            Paused_Menu.DeathRestart();
+
         }
-  
+
+       
+
+
+
+    }
+
+   
 
 
 }
