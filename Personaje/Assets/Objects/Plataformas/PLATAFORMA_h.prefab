@@ -21,8 +21,11 @@ GameObject:
   - component: {fileID: 4707970446562248}
   - component: {fileID: 212911086138306978}
   - component: {fileID: 114009644499999594}
+<<<<<<< HEAD:Personaje/Assets/Objects/PLATAFORMA.prefab
   - component: {fileID: 60876886000145666}
   - component: {fileID: 60261624504913358}
+=======
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54:Personaje/Assets/Objects/Plataformas/PLATAFORMA_h.prefab
   m_Layer: 0
   m_Name: Moving_platform_0
   m_TagString: Untagged
@@ -40,7 +43,7 @@ GameObject:
   - component: {fileID: 4850439500056786}
   - component: {fileID: 61863205725309818}
   m_Layer: 9
-  m_Name: PLATAFORMA
+  m_Name: PLATAFORMA_h
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,8 +59,11 @@ GameObject:
   - component: {fileID: 4788710265522888}
   - component: {fileID: 212568590645539056}
   - component: {fileID: 114665858932018648}
+<<<<<<< HEAD:Personaje/Assets/Objects/PLATAFORMA.prefab
   - component: {fileID: 114363387656868642}
   - component: {fileID: 114559472813317338}
+=======
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54:Personaje/Assets/Objects/Plataformas/PLATAFORMA_h.prefab
   m_Layer: 0
   m_Name: Moving_platform_1
   m_TagString: Untagged
@@ -183,7 +189,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464423750856674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD:Personaje/Assets/Objects/PLATAFORMA.prefab
   m_LocalPosition: {x: -202.9, y: -119.1, z: -0.9127924}
+=======
+  m_LocalPosition: {x: 4.3859425, y: -39.8631, z: 0}
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54:Personaje/Assets/Objects/Plataformas/PLATAFORMA_h.prefab
   m_LocalScale: {x: 0.30586985, y: 0.30586985, z: 0}
   m_Children:
   - {fileID: 4707970446562248}
@@ -360,12 +370,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tope1: {fileID: 1668578543193246}
   tope2: {fileID: 1664500756158250}
+<<<<<<< HEAD:Personaje/Assets/Objects/PLATAFORMA.prefab
 --- !u!114 &114363387656868642
+=======
+--- !u!114 &114665858932018648
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54:Personaje/Assets/Objects/Plataformas/PLATAFORMA_h.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660339234071192}
+<<<<<<< HEAD:Personaje/Assets/Objects/PLATAFORMA.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64aab6a1bfe4949e9a0ae20de187287d, type: 3}
@@ -395,6 +410,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc830a932528547d796d64a3aaef7115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc830a932528547d796d64a3aaef7115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54:Personaje/Assets/Objects/Plataformas/PLATAFORMA_h.prefab
   tope1: {fileID: 1668578543193246}
   tope2: {fileID: 1664500756158250}
 --- !u!212 &212568590645539056

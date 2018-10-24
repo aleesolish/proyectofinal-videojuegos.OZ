@@ -24,11 +24,17 @@ GameObject:
   - component: {fileID: 70905126034002388}
   - component: {fileID: 50395334464001520}
   - component: {fileID: 61485962718831636}
+<<<<<<< HEAD
   - component: {fileID: 114005658018412374}
   - component: {fileID: 70431370535208386}
   m_Layer: 11
   m_Name: "RatAran\u0303a"
   m_TagString: Deadly
+=======
+  m_Layer: 0
+  m_Name: "RatAra\xF1a"
+  m_TagString: Untagged
+>>>>>>> f44b4a8afaa1bc92531cf49463e3020f8de38b54
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
